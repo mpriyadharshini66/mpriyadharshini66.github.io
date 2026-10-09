@@ -1,1 +1,503 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Priyadharshini M | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+            padding: 40px 20px;
+        }
+
+        .home h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .home h1 span {
+            color: #0284c7;
+        }
+
+        .home p {
+            font-size: 22px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #0284c7;
+        }
+
+        /* About */
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        /* Education */
+        .education {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .education-box {
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-left: 5px solid #0284c7;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .contact a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .home h1 {
+                font-size: 35px;
+            }
+
+            .home p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <h2>Priyadharshini M</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#internship">Internship</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+
+        <div>
+
+            <h1>
+                Hello, I'm <span>Priyadharshini M</span>
+            </h1>
+
+            <p>
+                Computer Science Engineering Student | Web Developer
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a Computer Science Engineering student interested
+                in web development and software development. I enjoy
+                learning new technologies and creating simple,
+                useful and user-friendly applications.
+            </p>
+
+            <br>
+
+            <p>
+                I am continuously improving my technical and
+                problem-solving skills and looking forward to gaining
+                real-world experience in the software industry.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">C</div>
+            <div class="skill">C++</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git & GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+
+                <h3>Event Management System</h3>
+
+                <p>
+                    A web-based event management application designed
+                    to help users explore events and manage booking
+                    details.
+                </p>
+
+                <br>
+
+                <p>
+                    <b>Technologies:</b>
+                    HTML, CSS, JavaScript
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A simple application for managing student
+                    information, records and academic details.
+                </p>
+
+                <br>
+
+                <p>
+                    <b>Technologies:</b>
+                    Java, SQL
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A responsive personal portfolio website created
+                    to showcase skills, projects, education and
+                    achievements.
+                </p>
+
+                <br>
+
+                <p>
+                    <b>Technologies:</b>
+                    HTML, CSS, JavaScript
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <div class="education-box">
+
+                <h3>
+                    B.E. Computer Science and Engineering
+                </h3>
+
+                <p>
+                    Engineering College
+                </p>
+
+                <p>
+                    Currently Pursuing
+                </p>
+
+            </div>
+
+
+            <div class="education-box">
+
+                <h3>
+                    Higher Secondary Education
+                </h3>
+
+                <p>
+                    Completed 12th Standard
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Internship -->
+    <section id="internship">
+
+        <h2>Internship</h2>
+
+        <div class="education">
+
+            <div class="education-box">
+
+                <h3>Web Development Intern</h3>
+
+                <p>
+                    <b>Company:</b> Your Company Name
+                </p>
+
+                <p>
+                    <b>Duration:</b> 15 Days
+                </p>
+
+                <p>
+                    <b>Technologies:</b>
+                    HTML, CSS, JavaScript, VS Code
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+
+            <p>
+                📧 Email:
+                <a href="mailto:yourmail@gmail.com">
+                    kamali5520008@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 Phone: +91 6382453723
+            </p>
+
+            <p>
+                💻 GitHub:
+                <a href="https://github.com/" target="_blank">
+                    mpriyadharshini66
+                </a>
+            </p>
+
+            <p>
+                🔗 LinkedIn:
+                <a href="#" target="_blank">
+                    Priyadharshini M
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Priyadharshini M. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
